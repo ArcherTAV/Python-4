@@ -1,6 +1,7 @@
 money = 0.0
 history = []
-while True:
+
+def print_menu():
     print("\n" * 2)
     print(f'на счету {money} руб')
     print('===================')
@@ -9,6 +10,9 @@ while True:
     print('3. история покупок')
     print('4. выход')
 
+
+while True:
+    print_menu()
 
     choice = input('Выберите пункт меню\n')
     if choice == '1':
